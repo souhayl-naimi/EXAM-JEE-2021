@@ -1,0 +1,14 @@
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>E-mail</th>
+  </tr>
+  <tr *ngFor="let p of suppliers._embedded.suppliers">
+    <td>{{p.id}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.email}}</td>
+    <div class="btn btn-outline-warning">Modifier</div>
+    <div class="btn btn-outline-danger">Supprimer</div>
+  </tr>
+</table>
